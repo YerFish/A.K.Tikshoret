@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy"), url(fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Neuzeit Grotesk Price";
+    src: local("Neuzeit Grotesk Price"), url(fonts/NeuzeitGrotesk/NeuzeitGroCon-Bla.ttf);
+}
+
+@font-face {
+    font-family: "Neuzeit Grotesk Bold";
+    src: local("Neuzeit Grotesk Bold"), url(fonts/NeuzeitGrotesk/NeuzeitGro-Bol.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: #282828;
+    opacity: 80%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+}
+
+.wrapper,
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 390px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 24px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p-small {
+    font-size: 12px;
+    color: #000;
+    opacity: 100%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* слайдер */
+.slider-container {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #DCDCDC;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.prev-button {
+    left: 4px;
+}
+
+.next-button {
+    right: 4px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    height: 117px;
+    width: 100%;
+
+
+}
+
+/* карусель */
+.carousel {
+    display: flex;
+    justify-content: space-between;
+
+    width: 370px;
+    height: 100%;
+}
+
+.section-1-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 495px;
+
+}
+
+.carousel img {
+    border-radius: 30px;
+}
+
+.active {
+    border: 1px solid #DCDCDC;
+}
+
+
+/* секция 2 */
+.section-2-buy {
+    display: flex;
+    flex-direction: column;
+    height: 348px;
+    width: 100%;
+    gap: 12px;
+}
+
+.section-1-h2-buy {
+    color: #282828;
+    opacity: 100%;
+    font-family: "Neuzeit Grotesk Bold";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.div-timer-sale-container {
+    display: flex;
+    padding: 0px 10px;
+    gap: 44px;
+    align-items: center;
+}
+
+.timer-sale {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.div-price {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.price-old {
+    color: rgba(40, 40, 40, 0.80);
+    opacity: 100%;
+    font-family: "Neuzeit Grotesk Price";
+    font-size: 18px;
+    font-weight: 500;
+
+    text-decoration-line: line-through;
+}
+
+.price-new {
+    color: #282828;
+    opacity: 100%;
+    font-family: "Neuzeit Grotesk Price";
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-top: -7px;
+}
+
+.div-off {
+    border-radius: 40px;
+    background: linear-gradient(106deg, #69B1C9 11.42%, #6081C3 53.89%, #5558AF 95.29%);
+    display: grid;
+    place-content: center;
+    width: 94px;
+    height: 33px;
+    padding-top: 1px;
+
+}
+
+.off {
+    color: #FFF;
+    text-align: center;
+    font-family: "Neuzeit Grotesk Price";
+    font-size: 20px;
+    opacity: 100%;
+    font-weight: 500;
+}
+
+.div-price-off {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+}
+
+
+
+.section-2-div-color {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 370px;
+    height: 61px;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 172px;
+}
+.circle-1, .circle-2, .circle-3, .circle-4 {
+    border: 2px solid #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.circle-1 {
+    background: #ADACB1;
+}
+
+.circle-2 {
+    background: #282828;
+
+}
+
+.circle-3 {
+    background: #ECAAA7;
+}
+
+.circle-4 {
+    background: #ECE5DD;
+}
+.active {
+    border-radius: 50%;
+    border: 1px solid #626262;
+}
